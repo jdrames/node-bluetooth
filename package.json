@@ -1,44 +1,19 @@
 {
-  "name": "node-bluetooth",
-  "version": "1.2.6",
-  "description": "Bluetooth serial port communication for Node.js",
-  "keywords": [
-    "bluetooth"
-  ],
+  "name": "escpos-bluetooth",
+  "version": "3.0.0-alpha.3",
+  "description": "bluetooth adapter for escpos",
   "main": "index.js",
-  "os": [
-    "darwin",
-    "linux",
-    "win32"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "escpos",
+    "escpos-adapter"
   ],
   "dependencies": {
-    "nan": "~2.13.0",
-    "bindings": "1.2.x",
-    "prebuild-install": "^5.3.2"
+    "@abandonware/bluetooth-hci-socket": "*"
   },
-  "engines": {
-    "node": ">= 0.8.x",
-    "npm": ">= 1.1.x"
-  },
-  "scripts": {
-    "install": "prebuild-install || node-gyp configure build",
-    "install-debug": "prebuild-install --debug || node-gyp configure build --debug",
-    "prebuild": "prebuild --all --force --strip --verbose"
-  },
+  "author": "Lsong <song940@gmail.com> (https://lsong.org)",
   "license": "MIT",
-  "author": "lsong",
-  "directories": {
-    "example": "example"
-  },
-  "devDependencies": {
-    "prebuild": "^9.1.1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/song940/node-bluetooth.git"
-  },
-  "bugs": {
-    "url": "https://github.com/song940/node-bluetooth/issues"
-  },
-  "homepage": "https://github.com/song940/node-bluetooth#readme"
+  "gitHead": "1feb83c1b2ed0d9dd586f08870cfe0df31e23d7f"
 }
